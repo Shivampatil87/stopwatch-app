@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch Application</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="stopwatch">
+      <h1 class="title">Stopwatch</h1>
+      <div class="display" id="display">00:00:00</div>
+      <div class="controls">
+        <button class="btn" id="startStop">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="btn" id="reset">
+          <i class="fas fa-redo"></i>
+        </button>
+        <button class="btn" id="lap">
+          <i class="fas fa-flag"></i>
+        </button>
+        <button class="btn" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ✅ Lap section is now OUTSIDE the stopwatch circle -->
+    <div class="laps" id="laps"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
